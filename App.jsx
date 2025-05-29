@@ -13,7 +13,7 @@ function App() {
 
   return (
     <Router>
-      <div className={lang === 'ar' ? 'text-right font-arabic' : 'text-left'}>
+      <div className={lang === 'ar' ? 'text-right' : 'text-left'}>
         <Navbar lang={lang} setLang={setLang} />
         <Routes>
           <Route path="/" element={<Home lang={lang} />} />
